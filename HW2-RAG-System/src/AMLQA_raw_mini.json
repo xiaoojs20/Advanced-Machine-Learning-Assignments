@@ -1,0 +1,238 @@
+[
+    {
+        "query": "什么是“Scaling Law”？",
+        "answer": "Scaling Law指的是我们可以使用模型大小、数据集大小和总计算量来预测模型的最终能力。"
+    },
+    {
+        "query": "大型语言模型训练所需的数据特点有哪些？",
+        "answer": "大型语言模型训练所需的数据特点包括：数量——训练大型语言模型需要跨越各种类型的数万亿个数据点；领域——它应该涵盖广泛的领域、流派、语言等；质量——构建“高质量”数据对于大型语言模型的训练至关重要。"
+    },
+    {
+        "query": "什么是“General Data”？",
+        "answer": "General Data 包括来自网页、书籍、新闻、对话文本等内容，其中网页是最大的类别。"
+    },
+    {
+        "query": "“General Data”的数据来源是什么？",
+        "answer": "数据来源是 Zhao W X, Zhou K, Li J, et al. 发表的论文《A survey of large language models》，该论文的预印本为 arXiv preprint arXiv:2303.18223，发表时间为2023年。"
+    },
+    {
+        "query": "专用数据在大型语言模型中通常占多大比例？",
+        "answer": "专用数据通常只占大型语言模型的一小部分比例。"
+    },
+    {
+        "query": "专用数据在下游任务中扮演什么角色？",
+        "answer": "专用数据在增强特定任务的特定能力中扮演着关键角色。"
+    },
+    {
+        "query": "为什么在大语言模型研究中，数据质量至关重要？",
+        "answer": "研究表明，数据质量对模型性能有显著影响。"
+    },
+    {
+        "query": "在处理收集到的各种类型数据时，需要移除哪些内容？",
+        "answer": "需要移除低质量数据、重复数据、有害信息和涉及个人隐私的内容。"
+    },
+    {
+        "query": "What is the parameter count of GPT-3?",
+        "answer": "175 billion"
+    },
+    {
+        "query": "How many training tokens does Jurassic require?",
+        "answer": "300 billion"
+    },
+    {
+        "query": "为什么在模型训练过程中使用大量重复的低质量数据会导致问题？",
+        "answer": "因为大量重复的低质量数据可以 destabilize the training process, leading to non-convergence of model training。"
+    },
+    {
+        "query": "使用经过过滤和去重处理的MassiveWeb数据训练语言模型相比未处理的数据，在哪些方面表现更好？",
+        "answer": "在三个任务上表现更好。"
+    },
+    {
+        "query": "在训练数据中，哪些因素会导致不同的语言模型展现出不同的语言特征和语义知识？",
+        "answer": "上下文信息中指出，训练数据来自各种领域、语言和应用场景，这些因素会导致不同的语言模型展现出不同的语言特征和语义知识。"
+    },
+    {
+        "query": "为什么使用来自不同来源的数据对于大型语言模型来说很重要？",
+        "answer": "根据上下文信息，使用来自不同来源的数据可以使大型语言模型获得广泛的知识，因为不同的数据来源包含了多样的语言特征和语义知识。"
+    },
+    {
+        "query": "Pile 数据集由多少个不同的高质量子集组成？",
+        "answer": "Pile 数据集由 22 个不同的高质量子集组成。"
+    },
+    {
+        "query": "Pile 数据集的规模是多少？",
+        "answer": "Pile 数据集的规模是 800GB。"
+    },
+    {
+        "query": "高质量数据对于大型语言模型增长速度滞后于什么？",
+        "answer": "高质量数据对于大型语言模型增长速度滞后于训练数据集的扩展。"
+    },
+    {
+        "query": "目前数据生成主要涉及哪两种方法？",
+        "answer": "目前数据生成主要涉及数据增强和数据合成。"
+    },
+    {
+        "query": "什么是数据增强？",
+        "answer": "数据增强是一种从现有数据生成数据的方法，通常涉及对原始数据进行操作，以增加其多样性和数量，同时不显著改变其基本特征。"
+    },
+    {
+        "query": "数据合成与数据增强有什么区别？",
+        "answer": "数据合成旨在从头开始创建全新的数据或基于生成模型，其分布与真实数据相似。而数据增强是通过变换或扰动现有数据来丰富现有数据样本。"
+    },
+    {
+        "query": "什么是数据合成的三个子类别？",
+        "answer": "数据合成可以划分为三个子类别：一般模型蒸馏、领域模型蒸馏和模型自我改进。"
+    },
+    {
+        "query": "在哪个阶段会使用到强大的通用LLM来对数据进行蒸馏，从而获得高质量的数据？",
+        "answer": "数据准备阶段"
+    },
+    {
+        "query": "在哪个阶段会使用LLM来生成数据，并使用这些数据对LLM进行预训练？",
+        "answer": "预训练阶段"
+    },
+    {
+        "query": "什么是域模型蒸馏的主要目标？",
+        "answer": "域模型蒸馏的主要目标是优化模型，通过使用特定领域的数据集进行训练，以提高模型在特定任务和领域的性能。"
+    },
+    {
+        "query": "域模型蒸馏中，哪些方法仍然适用？",
+        "answer": "在域模型蒸馏中，通用模型蒸馏、模型自我改进和数据增强方法仍然适用。"
+    },
+    {
+        "query": "什么技术已经成为大型模型数据工程的新研究方向？",
+        "answer": "数据合成和增强技术"
+    },
+    {
+        "query": "数据创新是否足以应对当前的数据工程需求？",
+        "answer": "不，除了数据创新，还需要方法论的创新。"
+    },
+    {
+        "query": "什么是Recurrent Neural Network (RNN)中的softmax函数的作用？",
+        "answer": "softmax函数用于将输入的实数值转换为概率分布，其中每个元素都表示对应类别的概率。"
+    },
+    {
+        "query": "在RNN中，如何评估预测输出与真实输出之间的差异？",
+        "answer": "使用损失函数L来评估预测输出\\( \\hat{y} \\)与真实输出\\( y \\)之间的差异。"
+    },
+    {
+        "query": "RNN在处理长序列数据时，其计算速度会怎样？",
+        "answer": "RNN在处理长序列数据时，其计算速度会变慢，特别是对于长序列。"
+    },
+    {
+        "query": "RNN在并行化处理上表现如何？",
+        "answer": "RNN在并行化处理上表现有限，因为其具有顺序处理的特点。"
+    },
+    {
+        "query": "什么是LSTM中的Forget Gate？",
+        "answer": "LSTM中的Forget Gate是指f(t) = sigmoid(W_f^h_t-1 + U_f^x_t + b_f)，用于决定在当前时间步长t中，需要忘记前一个时间步长t-1的哪些信息。"
+    },
+    {
+        "query": "在GRU中，Reset Gate有什么作用？",
+        "answer": "在GRU中，Reset Gate的作用是通过r(t) = sigmoid(W_r^h_t-1 + U_r^x_t + b_r)决定是否应该重置或清除前一个时间步长t-1的隐藏状态h(t-1)。"
+    },
+    {
+        "query": "为什么传统的RNN在处理长序列时表现较差？",
+        "answer": "传统的RNN在处理长序列时表现较差，特别是由于它的循环结构和序列处理限制，导致计算速度慢。"
+    },
+    {
+        "query": "与RNN相比，LSTM在哪些方面表现更好？",
+        "answer": "与RNN相比，LSTM在处理长序列时表现更好，因为它有更好的梯度流动，减少了梯度消失的问题。"
+    },
+    {
+        "query": "与RNN相比，CNN在处理长序列时的速度如何？",
+        "answer": "CNN在处理长序列时速度较快，特别是由于CNN的操作可以高度并行化。"
+    },
+    {
+        "query": "在处理长序列时，LSTM和CNN的梯度流有何不同？",
+        "answer": "LSTM具有更好的梯度流，并且较少出现梯度消失的问题，而CNN具有稳定的梯度流。"
+    },
+    {
+        "query": "什么是将字符串转换为序列的过程？",
+        "answer": "一个tokenizer（标记化器）将任何字符串转换为序列的token。"
+    },
+    {
+        "query": "在自然语言处理中，为什么需要tokenization？",
+        "answer": "因为自然语言不直接以token序列的形式出现，而是以字符串（具体为Unicode字符序列）的形式出现，tokenizer的作用是将字符串转换为token序列以便进行后续处理。"
+    },
+    {
+        "query": "在哪种语言中，使用空格分隔句子中的单词的方法不适用？",
+        "answer": "在像中文这样的语言中，句子中的单词没有空格分隔。"
+    },
+    {
+        "query": "分词时，为什么仅仅根据空格来分割可能会遇到问题？",
+        "answer": "因为在英语中，存在连字符连接的单词（例如，father-in-law）和缩写（例如，don’t），这些应该在分词时分开。例如，Penn Treebank将don’t分割成do和n't，这是一个从语言学角度出发但并不明显的选择。因此，仅根据空格来分割以识别单词是一个相当有问题的方法。"
+    },
+    {
+        "query": "Why is it important to avoid having too many tokens in tokenization?",
+        "answer": "It is important to avoid having too many tokens because it can make the sequence difficult to model."
+    },
+    {
+        "query": "What is the concern when there are too few tokens in tokenization, particularly for morphologically rich languages?",
+        "answer": "The concern is that there won’t be parameter sharing between words, which can be problematic for morphologically rich languages like Arabic and Turkish."
+    },
+    {
+        "query": "什么是Byte Pair Encoding (BPE) 算法？",
+        "answer": "Byte Pair Encoding (BPE) 算法是一种将字符序列转换为更小单元（token）的方法，最初是为了数据压缩而开发的。"
+    },
+    {
+        "query": "BPE算法在生成tokenizer时的基本思路是什么？",
+        "answer": "BPE算法在生成tokenizer时的基本思路是：从每个字符作为一个单独的token开始，然后合并那些经常一起出现的token。"
+    },
+    {
+        "query": "在BPE算法的例子中，哪个序列第一次出现合并操作？",
+        "answer": "[th, e, ␣, c, a, r], [th, e, ␣, c, a, t], [th, e, ␣, r, a, t] (th occurs 3x)"
+    },
+    {
+        "query": "在BPE算法的例子中，哪个字符序列被合并成了“ca”？",
+        "answer": "c, a ⇒ca"
+    },
+    {
+        "query": "在20Byte Pair Encoding (BPE)算法的更新词汇中，哪些是基本的Unicode字符？",
+        "answer": "[a, c, e, h, t, r]"
+    },
+    {
+        "query": "在应用BPE算法进行分词时，如果输入字符串为\"the ox\"，经过BPE算法处理后，它会变成什么形式？",
+        "answer": "[th, e, ␣, o, x]"
+    },
+    {
+        "query": "什么是“principled”的tokenization方法？",
+        "answer": "“principled”的tokenization方法是指通过定义一个目标函数来捕捉好的tokenization外观的方法。"
+    },
+    {
+        "query": "在Unigram模型中，如何使用EM算法来优化词汇表V？",
+        "answer": "在Unigram模型中，使用EM算法优化词汇表V的步骤是：给定V，重复使用EM算法优化p(x)和T。计算每个token x ∈V 的损失函数loss(x)，该函数捕捉了如果从V中移除x，则似然降低的程度。然后按损失排序，并保留排序后的前80%的token在V中。"
+    },
+    {
+        "query": "Jurassic和GPT-3在词汇量方面有什么不同？",
+        "answer": "Jurassic使用SentencePiece，词汇量为256K；而GPT-3使用BPE，词汇量为50K。"
+    },
+    {
+        "query": "使用Jurassic进行文本分词比使用GPT-3更高效吗？为什么？",
+        "answer": "是的，使用Jurassic进行文本分词比使用GPT-3更高效。因为Jurassic在给定的字符串上需要28%更少的tokens，所以它比GPT-3快1.4倍。"
+    },
+    {
+        "query": "在Word2Vec中，将文本转换为向量表示时，常用的方法之一是什么？",
+        "answer": "One-hot encoding"
+    },
+    {
+        "query": "在深度学习中，相比于one-hot encoding，我们更倾向于使用哪种表示方法？",
+        "answer": "分布式表示"
+    },
+    {
+        "query": "什么是CBOW模型？",
+        "answer": "CBOW模型是Continuous Bag-of-Words的缩写，它预测当前词基于上下文。上下文Ct定义为当前词wt之前和之后的词。上下文表示是通过计算上下文中所有词的词向量平均值得到的。"
+    },
+    {
+        "query": "CBOW模型中的上下文Ct是如何定义的？",
+        "answer": "CBOW模型中的上下文Ct定义为当前词wt之前和之后的词。具体来说，Ct=1/|Ct| Σw_i∈Ctu_wi，其中u_wi是上下文中第i个词的词向量。"
+    },
+    {
+        "query": "在Continuous Bag-of-Words Model中，目标函数的最大化表达式是什么？",
+        "answer": "𝑡=1𝑇 𝑝(𝑤𝑡|𝑪𝑡)"
+    },
+    {
+        "query": "在Hierarchical Softmax中，如何表示每个词的概率计算公式？",
+        "answer": "𝑝𝑤𝑡𝐶𝑡= ෑ𝑘=1𝐾 𝑝(𝑑𝑘|𝑞𝑘, 𝐶𝑡)= ෑ𝑘=1𝐾 (𝜎𝑞𝑘⋅𝑪𝑡1−𝑑𝑘⋅1 −𝜎𝑞𝑘⋅𝑪𝑡𝑑𝑘)"
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "reason_settings": {
+      "label_sentence": "default",
+      "method": "default",
+      "response_model": "glm-4-flash",
+      "critic_model": "glm-4-flash",
+      "evaluate_try_times": 3
+    },
+    "save_settings": {
+      "save_path": "path/to/save",
+      "test_dataset": "your_test_dataset" 
+    }
+}

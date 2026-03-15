@@ -1,0 +1,64 @@
+{
+    "data": {
+        "path": "/flash2/aml/xiaojs24/AML_2/database",
+        "content": ["AML_slides", "llm_paper", "book", "blog"],
+        "url": [
+            "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/",
+            "https://lilianweng.github.io/posts/2024-07-07-hallucination/",
+            "https://lilianweng.github.io/posts/2024-04-12-diffusion-video/",
+            "https://lilianweng.github.io/posts/2024-02-05-human-data-quality/",
+            "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
+            "https://lilianweng.github.io/posts/2023-06-23-agent/",
+            "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
+            "https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/",
+            "https://lilianweng.github.io/posts/2023-01-10-inference-optimization/",
+            "https://lilianweng.github.io/posts/2022-09-08-ntk/",
+            "https://lilianweng.github.io/posts/2022-06-09-vlm/",
+            "https://lilianweng.github.io/posts/2021-09-25-train-large/"
+        ],
+        "total": "/flash2/aml/xiaojs24/AML_2/src/data.txt",
+        "QA": "/flash2/aml/xiaojs24/AML_2/src/AMLQA.json"
+    },
+    "vector_db": {
+        "path": "/flash2/aml/xiaojs24/AML_2/database/vector_db"
+    },
+    "embedding": {
+        "model": "/flash2/aml/public/models/bge-m3"
+    },
+    "model": {
+        "embedding": "/flash2/aml/public/models/bge-m3",
+        "llama-8b": "/flash2/aml/public/models/Llama-3.1-8B-Instruct",
+        "glm4-9b": "/flash2/aml/public/models/glm-4-9b-chat"
+    },
+    "lora": {
+        "path": "/flash2/aml/xiaojs24/AML_2/lora",
+        "r": 8,
+        "lora_alpha": 32,
+        "lora_dropout": 0.01,
+        "target_modules": ["query_key_value"],
+        "target_modules_llama": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        "num_train_epochs": 20,
+        "is_wandb": true,
+        "instruction": "你是一个机器学习、深度学习的专家，你会接收到一个相关主题的问题，请输出该问题的正确答案"
+    },
+    "generation": {
+        "temperature": 0.1,
+        "top_p": 1,
+        "top_k": 40,
+        "num_beams": 1,
+        "max_tokens": 512,
+        "max_length": 1024, 
+        "question": ["Scene-Clipping Long Video For Better Understanding 作者是谁?"],
+        "questions": [
+            "Scene-Clipping Long Video For Better Understanding 作者是谁?",
+            "Jie Tang的单位是什么?如何获取他们的论文数据和代码?",
+            "什么是KAN网络? 全称是什么?",
+            "CogVideo是什么? 采用了什么技术?",
+            "CodeGeeX是什么? 采用了什么技术?",
+            "AutoGLM是什么? 采用了什么技术?"
+        ]
+    },
+    "api_key": "YOUR_API_KEY_HERE",
+    "seed": 42
+}
+

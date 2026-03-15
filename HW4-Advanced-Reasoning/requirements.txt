@@ -1,0 +1,4 @@
+zhipuai
+pandas
+tqdm
+huggingface_hub

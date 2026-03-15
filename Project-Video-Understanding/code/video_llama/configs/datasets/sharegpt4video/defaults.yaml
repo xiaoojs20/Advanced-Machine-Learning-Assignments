@@ -1,0 +1,6 @@
+datasets:
+  webvid:
+    data_type: video
+    build_info:
+      anno_dir: /flash2/aml/public/datasets/ShareGPT4Video/sharegpt4video_40k.jsonl
+      videos_dir: /flash2/aml/public/datasets/ShareGPT4Video/zip_folder

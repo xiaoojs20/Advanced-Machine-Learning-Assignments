@@ -1,0 +1,85 @@
+odict_keys(['transformer.embedding.word_embeddings.weight',
+            'transformer.rotary_pos_emb.inv_freq',
+            'transformer.encoder.layers.0.input_layernorm.weight',
+            'transformer.encoder.layers.0.self_attention.query_key_value.weight',
+            'transformer.encoder.layers.0.self_attention.query_key_value.bias',
+            'transformer.encoder.layers.0.self_attention.dense.weight',
+            'transformer.encoder.layers.0.post_attention_layernorm.weight',
+            'transformer.encoder.layers.0.mlp.dense_h_to_4h.weight',
+            'transformer.encoder.layers.0.mlp.dense_4h_to_h.weight',
+            'transformer.encoder.final_layernorm.weight',
+            'transformer.output_layer.weight'])
+
+
+
+odict_keys(['transformer.word_embedding.weight',
+            'transformer.model.final_layernorm.scale',
+            'transformer.model.layers.0.self_attention.query_key_value.weight',
+            'transformer.model.layers.0.self_attention.query_key_value.bias',
+            'transformer.model.layers.0.self_attention.dense.weight',
+            'transformer.model.layers.0.input_layernorm.scale',
+            'transformer.model.layers.0.post_attention_layernorm.scale',
+            'transformer.model.layers.0.mlp.dense_h_to_4h.weight',
+            'transformer.model.layers.0.mlp.dense_4h_to_h.weight',
+            'transformer.output_layer.weight',
+            'transformer.rotary_pos_emb.inv_freq'])    
+
+
+            model.load_state_dict(torch.load("glm4.pt"))
+            tensor([    25,    435,     25,     25,    220,     25,    220,     25,    220,
+                        25,    220,     25,    220,     25,    220,     25,    220,     25,
+                        42,     25, 148565,     25,     25,     25,     25,     25,     25,
+                        25,     25,     25,     25,     25,     25,     25,     25,     25,
+                        25,     25,     25,     25,     25,     25,    921,     25,     25,
+                      2519, 134494,     25,     25,     25,     25,     25,     25,     25,
+                        25,     25,     25,     25,     25,     25,     25,     25,     62,
+                        25,     25,     25,     25,     25, 115937,     25,  10037,     25,
+                        25,     25,     25,     25,     25,     25,     25,     25,     25,
+                        25,     25,     25,     25,     25,     25,     25,     25,     25,
+                        25], device='cuda:0')
+            : r:: : : : : : : :K: Här:::::::::::::::::::::]
+            ::js предлага:::::::::::::::_:::::202:java::::::::::::::::::::
+
+
+            an issue on GitHub for any issues related to this experimental feature.
+            model.load_state_dict(torch.load("glm4.pt"))
+          tensor([    25,    220,     25,   5296,     25,  98865,     25,     25,     25,
+                      25,     25,     25,     25,     25,     25,     25,     25,     62,
+                      25,     25,     25,     62,  52287,     25,     25,     25,  22683,
+                      25,     25,     25,     25,     25,     25,     25,     25,     25,
+                      25,     25,     62,     28,     25,     25,     25,    220,     25,
+                      25,    220,     15,     25,     25,    220,     15,    676,     25,
+                      25,    431,     25,    220,     15,     42,     25,     25,    320,
+                    3016,     25,     25, 144243,     25,     25,    431,     25,    773,
+                      25,  98965,     42,     25,  98965,     42,     25,     42,     25,
+                      42,     25,     49,     25,    431,     25,    320,   3016,     25,
+                      25], device='cuda:0')
+          : : lock:食:::::::::::_:::_ereg:::wear:::::::::::_=::: :: 0:: 0app:: R: 0K:: ( che::なり:: R: so:11K:11K:K:K:R: R: ( che::
+
+
+            ensor([    25,    220,     25,   5296,     25,  98865,     25,     25,     25,
+                25,     25,     25,     25,     25,     25,     25,     25,     62,
+                25,     25,     25,     62,  52287,     25,     25,     25,  22683,
+                25,     25,     25,     25,     25,     25,     25,     25,     25,
+                25,     25,     62,     28,     25,     25,     25,    220,     25,
+                25,    220,     15,     25,     25,    220,     15,    676,     25,
+                25,    431,     25,    220,     15,     42,     25,     25,    320,
+              3016,     25,     25, 144243,     25,     25,    431,     25,    773,
+                25,  98965,     42,     25,  98965,     42,     25,     42,     25,
+                42,     25,     49,     25,    431,     25,    320,   3016,     25,
+                25], device='cuda:0')
+    : : lock:食:::::::::::_:::_ereg:::wear:::::::::::_=::: :: 0:: 0app:: R: 0K:: ( che::なり:: R: so:11K:11K:K:K:R: R: ( che::
+
+
+        tensor([ 46506,  46506,  46506,  46506,  46506,  46506,  54423,  46506,  46506,
+            46506,  46506,  46506,  46506,  54423,  46506,  54423,  46506,  54423,
+            46506,  46506,  46506,  46506,  46506,  47692,  46506,  14929,  14929,
+            14929,  14929,  14929,  14929,  14929,  14929, 147147, 147147, 136537,
+           147147, 147147, 147147, 147147, 147147, 147147, 147147, 147147, 147147,
+            88821,  88821, 136537, 136537, 136537, 136537, 136537, 136537, 136537,
+           136537, 136537, 136537, 136537, 136537, 136537, 136537, 136537, 136537,
+           136537, 136537, 136537, 136537, 136537, 136537, 136537, 136537, 136537,
+           136537, 136537, 136537, 136537, 136537, 136537, 136537, 136537, 136537,
+           136537, 136537, 136537, 136537, 136537, 136537, 136537, 136537, 136537,
+            85931], device='cuda:0')
+   isphereisphereisphereisphereisphereisphereroxisphereisphereisphereisphereisphereisphereroxisphereroxisphereroxisphereisphereisphereisphereisphere----------</isphererowablerowablerowablerowablerowablerowablerowablerowableranaranabrieranaranaranaranaranaranaranaranaranawaynewaynebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebriebrie Ive
