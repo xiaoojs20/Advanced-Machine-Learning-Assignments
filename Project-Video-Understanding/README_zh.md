@@ -35,7 +35,20 @@
 - **阶段 1 (跨模态对齐)**: 在 WebVid-2M 和 LLaVA-CC3M 上进行预训练，将视听 Token 对齐至语言解码器 (Vicuna/Llama-2) 的语义空间。
 - **阶段 2 (指令微调)**: 在结合了 MiniGPT-4、LLaVA-Instruct 和 VideoChat 的专用数据集上进行微调，强化零样本指令遵循能力。
 
-### 3.2 关键依赖
+### 3.2 代码架构详解
+
+本工具包采用模块化设计，核心逻辑位于 `video_llama/` 目录下：
+
+- **`models/` (核心模型)**:
+    - `video_llama.py`: 集成视听双分支与 LLM 的主框架。
+    - `scenecut.py`: 核心 **Scene-Clipping** 算法实现（基于信息熵的动态场景分割）。
+    - `blip2.py` / `eva_vit.py`: 视觉底层编码器实现。
+- **`datasets/` (数据流)**: 包含 WebVid、LLaVA-Instruct 等多模态数据集的加载与预处理逻辑。
+- **`processors/` (处理器)**: 负责视频帧提取、音频信号变换等预处理流水线。
+- **`tasks/` (任务定义)**: 定义了从预训练、微调到评估的特定任务逻辑。
+- **`runners/` (运行器)**: 封装了分布式的训练循环与模型评测流程。
+
+### 3.3 关键依赖
 - **LLM 基座**: Llama-2-Chat (7B/13B)。
 - **视觉模块**: EVA-CLIP & BLIP-2。
 - **音频模块**: ImageBind。

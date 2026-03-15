@@ -35,7 +35,20 @@ The training followed a rigorous two-stage process:
 - **Stage 1 (Cross-Modal Alignment)**: Pre-training on WebVid-2M and LLaVA-CC3M to align visual/audio tokens with the language decoder (Vicuna/Llama-2).
 - **Stage 2 (Instruction Tuning)**: Fine-tuning on a specialized dataset combining MiniGPT-4, LLaVA-Instruct, and VideoChat data to enhance zero-shot instruction following.
 
-### 3.2 Key Dependencies
+### 3.2 Code Architecture Analysis
+
+The codebase is structured modularly following the Video-LLaMA design principles:
+
+- **`video_llama/models/`**: The core architecture definition.
+    - `video_llama.py`: Main model class integrating VL and AL branches.
+    - `scenecut.py`: Our custom **Scene-Clipping** logic (entropy-based segmentation).
+    - `blip2.py` & `eva_vit.py`: Vision backbones.
+- **`video_llama/datasets/`**: Handles multi-modal data loading (WebVid, LLaVA-Instruct).
+- **`video_llama/processors/`**: Pre-processing pipelines for both video frames and audio signals.
+- **`video_llama/tasks/`**: Defines specific training/evaluation objectives (e.g., `video_text_pretrain`).
+- **`video_llama/runners/`**: Managed training loops and evaluation logic.
+
+### 3.3 Key Dependencies
 - **LLM Backbone**: Llama-2-Chat (7B/13B).
 - **Vision**: EVA-CLIP & BLIP-2.
 - **Audio**: ImageBind.

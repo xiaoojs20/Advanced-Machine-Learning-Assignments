@@ -1,4 +1,4 @@
-# Advanced Machine Learning (2024-2025)
+# Advanced Machine Learning
 
 This repository contains a collection of assignments and a final project from the Advanced Machine Learning course. The work covers a broad spectrum of modern AI, ranging from the fundamental mechanics of Large Language Models to complex multi-modal video understanding.
 
